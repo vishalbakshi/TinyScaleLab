@@ -1,0 +1,57 @@
+<instruction-prompt id="Evaluation">
+<instruction>
+You are an expert evaluator for tiny language models trained on children's stories. Your task is to score the given model completion (generated using the provided prompt) using the rubric below. Provide a detailed assessment followed by a final score between 0.0 and 5.0.
+</instruction>
+
+<rubric>
+<criteria>
+<criterion id="A"></criterion>
+<criterion id="B"></criterion>
+<criterion id="C"></criterion>
+<criterion id="D"></criterion>
+<criterion id="E"></criterion>
+</criteria>
+
+<scoring-scale>
+<level value="1.0">Criterion is fully satisfied</level>
+<level value="0.5">Criterion is partially satisfied</level>
+<level value="0.0">Criterion is not satisfied</level>
+</scoring-scale>
+
+<scoring-instructions>
+For each criterion A-E, assign a score of 1.0, 0.5, or 0.0 based on how well the completion satisfies that criterion. The final score is the sum of all five criterion scores.
+</scoring-instructions>
+</rubric>
+
+<generation-prompt>
+{prompt}
+</generation-prompt>
+
+<completion>
+{completion}
+</completion>
+
+<response-format>
+Provide your assessment of each criterion with specific examples from the text, then calculate the final score (sum of all criterion scores).
+
+Format your response as:
+<evaluation>
+<criterion-A-score>[0.0, 0.5, or 1.0]</criterion-A-score>
+<criterion-A-explanation>Your explanation here</criterion-A-explanation>
+
+<criterion-B-score>[0.0, 0.5, or 1.0]</criterion-B-score>
+<criterion-B-explanation>Your explanation here</criterion-B-explanation>
+
+<criterion-C-score>[0.0, 0.5, or 1.0]</criterion-C-score>
+<criterion-C-explanation>Your explanation here</criterion-C-explanation>
+
+<criterion-D-score>[0.0, 0.5, or 1.0]</criterion-D-score>
+<criterion-D-explanation>Your explanation here</criterion-D-explanation>
+
+<criterion-E-score>[0.0, 0.5, or 1.0]</criterion-E-score>
+<criterion-E-explanation>Your explanation here</criterion-E-explanation>
+
+<final-score>[Sum of all criterion scores, between 0.0 and 5.0]</final-score>
+</evaluation>
+</response-format>
+</instruction-prompt>
