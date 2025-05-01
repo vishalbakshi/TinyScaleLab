@@ -8,17 +8,17 @@
 
 ## Creativity
 
-- Does the completion offer unexpected or novel elements?
-- Are character behavioral and emotional responses predictable or innovative?
-- Does the story rely on cliches or create fresh situations?
-- Does the writer add unique details to the story world?
+- The completion offers unexpected or novel elements
+- Character behavioral and emotional responses are innovative
+- The completion creates fresh situations
+- The completion contains unique details to the story world
 
 ## Plot
 
-- Is there a clear beginning, middle, and end appropriate to age level?
-- Are conflicts addressed rather than abandoned?
-- Is the pacing appropriate (not too rushed or dragging)?
-- Does the story maintain focus on the central conflict/theme without random diversions?
+- The story has a clear beginning, middle, and end appropriate to age level
+- Conflicts are addressed rather than abandoned
+- The pacing is appropriate (not too rushed or dragging)
+- The story maintains focus on the central conflict/theme without random diversions
 
 ## Factual Knowledge
 
