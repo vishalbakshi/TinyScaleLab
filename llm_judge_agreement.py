@@ -2,11 +2,7 @@ from fasthtml.common import *
 import pandas as pd
 from pathlib import Path
 
-results_path = Path('llm_judge_score_agreement.csv')
-if results_path.exists(): 
-    df = pd.read_csv(results_path)
-else: 
-    df = pd.read_csv('2025-05-01-Haiku-Responses-with-Explanations.csv')
+df = pd.read_csv('llm_judge_score_agreement.csv')
 
 app, rt = fast_app(hdrs=[
     Style("""
