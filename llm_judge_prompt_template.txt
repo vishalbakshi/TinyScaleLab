@@ -1,7 +1,24 @@
 <instruction-prompt id="Evaluation">
-<instruction>
+<main-instruction>
 You are an expert evaluator for tiny language models trained on children's stories. Your task is to score the given model completion (generated using the provided prompt) using the rubric below. Provide a detailed assessment followed by a final total score.
-</instruction>
+</main-instruction>
+
+<additional-instructions>
+<penalization-rule>
+Penalize the following issues by decreasing one scoring level (1.0→0.5 or 0.5→0.0):
+
+- Text repetition (words or phrases)
+- Presence of <|endoftext|> token and/or start of a new story
+</penalization-rule>
+
+<evaluation-focus>
+Do not evaluate any other aspect of the story other than the specific criterion being assessed.
+</evaluation-focus>
+
+<prompt-continuation>
+Remember that the completion is a continuation of the prompt, not a standalone text.
+</prompt-continuation>
+</additional-instructions>
 
 <rubric>
 <criteria>
@@ -37,21 +54,43 @@ Provide your assessment of each criterion with specific examples from the text, 
 Format your response as:
 <evaluation>
 <criterion-A-score>[0.0, 0.5, or 1.0]</criterion-A-score>
-<criterion-A-explanation>Your explanation here</criterion-A-explanation>
+<criterion-A-explanation>Your explanation here. Do not evaluate any other aspect of the story other than the specific criterion being assessed.</criterion-A-explanation>
 
 <criterion-B-score>[0.0, 0.5, or 1.0]</criterion-B-score>
-<criterion-B-explanation>Your explanation here</criterion-B-explanation>
+<criterion-B-explanation>Your explanation here. Do not evaluate any other aspect of the story other than the specific criterion being assessed.</criterion-B-explanation>
 
 <criterion-C-score>[0.0, 0.5, or 1.0]</criterion-C-score>
-<criterion-C-explanation>Your explanation here</criterion-C-explanation>
+<criterion-C-explanation>Your explanation here. Do not evaluate any other aspect of the story other than the specific criterion being assessed.</criterion-C-explanation>
 
 <criterion-D-score>[0.0, 0.5, or 1.0]</criterion-D-score>
-<criterion-D-explanation>Your explanation here</criterion-D-explanation>
+<criterion-D-explanation>Your explanation here. Do not evaluate any other aspect of the story other than the specific criterion being assessed.</criterion-D-explanation>
 
 <criterion-E-score>[0.0, 0.5, or 1.0]</criterion-E-score>
-<criterion-E-explanation>Your explanation here</criterion-E-explanation>
+<criterion-E-explanation>Your explanation here. Do not evaluate any other aspect of the story other than the specific criterion being assessed.</criterion-E-explanation>
 
 <final-score>[Sum of all criterion scores, between #.# and #.#]</final-score>
 </evaluation>
 </response-format>
+
+<main-instruction>
+You are an expert evaluator for tiny language models trained on children's stories. Your task is to score the given model completion (generated using the provided prompt) using the rubric above. Provide a detailed assessment followed by a final total score.
+</main-instruction>
+
+<additional-instructions>
+<penalization-rule>
+Penalize the following issues by decreasing one scoring level (1.0→0.5 or 0.5→0.0):
+
+- Text repetition (words or phrases)
+- Presence of <|endoftext|> token and/or start of a new story
+</penalization-rule>
+
+<evaluation-focus>
+Do not evaluate any other aspect of the story other than the specific criterion being assessed.
+</evaluation-focus>
+
+<prompt-continuation>
+Remember that the completion is a continuation of the prompt, not a standalone text.
+</prompt-continuation>
+</additional-instructions>
+
 </instruction-prompt>
