@@ -16,7 +16,7 @@ You can follow along the development of this project on [my YouTube channel](htt
 
 ## LLM Judge Agreement on Evals
 
-See my [LLM Judge prompt template](https://github.com/vishalbakshi/TinyScaleLab/blob/main/llm_judge_prompt_template.txt). Each scoring category (Grammar, Context-Tracking, Creativity, Factual Knowledge, Reasoning, and Plot) are evaluated with a separate prompt with [their own criteria](https://github.com/vishalbakshi/TinyScaleLab/blob/main/criteria.csv).
+See my [LLM Judge prompt template](https://github.com/vishalbakshi/TinyScaleLab/blob/main/llm_judge_prompt_template.txt). Each scoring category (Grammar, Context-Tracking, Creativity, Factual Knowledge, Reasoning, and Plot) are evaluated with a separate prompt with [their own criteria](https://github.com/vishalbakshi/TinyScaleLab/blob/main/criteria.csv). See my [video for more context](https://youtu.be/FXOXoaGjntc).
 
 
 ### Overall
