@@ -14,6 +14,6 @@ Plot,C,Is the pacing appropriate (not too rushed or dragging)?
 Plot,D,Does the story maintain focus on the central conflict/theme without random diversions?
 Factual Knowledge,A,Completion contains only correct factual information relevant to the prompt
 Reasoning,A,Completion demonstrates correct logical reasoning relevant to the prompt
-Context-Tracking,A,Competion maintains complete coherence with prompt
+Context-Tracking,A,Completion maintains complete coherence with prompt
 Context-Tracking,B,"Correctly references/tracks all objects, characters, and their attributes"
 Context-Tracking,C,Maintains consistent narrative flow
