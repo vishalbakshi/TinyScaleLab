@@ -5,9 +5,8 @@ Grammar,C,"Sentence structure logic, clarity and completion"
 Grammar,D,Age-appropriate vocabulary usage
 Grammar,E,Proper use of pronouns and referents
 Creativity,A,Does the completion offer unexpected or novel elements?
-Creativity,B,Are character behavioral and emotional responses predictable or innovative?
-Creativity,C,Does the story rely on cliches or create fresh situations?
-Creativity,D,Does the writer add unique details to the story world?
+Creativity,B,Does the story rely on cliches or create fresh situations?
+Creativity,C,Does the writer add unique details to the story world?
 Plot,A,"Is there a clear beginning, middle, and end appropriate to age level?"
 Plot,B,Are conflicts addressed rather than abandoned?
 Plot,C,Is the pacing appropriate (not too rushed or dragging)?
